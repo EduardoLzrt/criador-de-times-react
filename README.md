@@ -60,7 +60,7 @@ No back-end (dentro da pasta `selecionador-times`):
 npm run dev
 ```
 
-No front-end (dentro da pasta `criador-de-times`):
+No front-end (dentro da pasta `criador-de-times-react`):
 ```bash
 npm run start
 ```
