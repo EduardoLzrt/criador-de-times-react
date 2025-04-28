@@ -1,70 +1,87 @@
-# Getting Started with Create React App
+# Criador de Times
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bem-vindo ao **Criador de Times**, um projeto desenvolvido para montar **times balanceados** de forma rápida e prática.
 
-## Available Scripts
+## Objetivo
 
-In the project directory, you can run:
+O **Criador de Times** tem como objetivo selecionar **10 players** e dividi-los em **2 times de 5 pessoas**, baseando-se no **MMR** (uma nota que representa o nível de habilidade de cada jogador).  
+O foco é garantir que as equipes fiquem o mais equilibradas possível para partidas justas e competitivas.
 
-### `npm start`
+## Tecnologias Utilizadas
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **React** — Front-end responsivo e dinâmico
+- **Node.js** — Back-end separado (repositório [aqui](https://github.com/EduardoLzrt/selecionador-times))
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Funcionalidades
 
-### `npm test`
+- Criar novos players com nome e MMR.
+- Selecionar os jogadores que participarão da partida.
+- Excluir players do sistema.
+- Gerar dois times balanceados automaticamente.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Estrutura do Projeto
 
-### `npm run build`
+Este repositório contém apenas o **Front-end**.  
+O **Back-end** está disponível no repositório:  
+[https://github.com/EduardoLzrt/selecionador-times](https://github.com/EduardoLzrt/selecionador-times)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Como rodar o projeto
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Clonar os repositórios
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Clone o front-end:
+```bash
+git clone https://github.com/seu-usuario/criador-de-times.git
+```
 
-### `npm run eject`
+Clone o back-end:
+```bash
+git clone https://github.com/EduardoLzrt/selecionador-times.git
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Instalar as dependências
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Para o front-end:
+```bash
+cd criador-de-times
+npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Para o back-end:
+```bash
+cd selecionador-times
+npm install
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Rodar os projetos
 
-## Learn More
+No back-end (dentro da pasta `selecionador-times`):
+```bash
+npm run dev
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+No front-end (dentro da pasta `criador-de-times`):
+```bash
+npm run start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Acessar o sistema
 
-### Code Splitting
+Abra o navegador e acesse:  
+[http://localhost:3000](http://localhost:3000)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+**Importante**: o back-end precisa estar rodando para que o front-end funcione corretamente.
 
-### Analyzing the Bundle Size
+## Pré-requisitos
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Ter **10 jogadores cadastrados** para gerar os times.
+- Ter **Node.js** e **npm** ou **yarn** instalados.
+- Rodar o **back-end** antes de iniciar o **front-end**.
 
-### Making a Progressive Web App
+## Contribuições
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Sugestões, melhorias ou novos recursos são bem-vindos.  
+Sinta-se à vontade para abrir uma issue ou enviar um pull request.
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
