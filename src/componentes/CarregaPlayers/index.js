@@ -99,7 +99,7 @@ const CarregaPlayers = () => {
                     <ul>
                         {time1.map((player, index) => (
                             <li key={index}>
-                                {player.nome} || {player.mmr} || {player.elo}
+                                {player.nome} || {player.elo}
                             </li>
                         ))}
                     </ul>
@@ -110,7 +110,7 @@ const CarregaPlayers = () => {
                     <ul>
                         {time2.map((player, index) => (
                             <li key={index}>
-                                {player.nome} || {player.mmr} || {player.elo}
+                                {player.nome} || {player.elo}
                             </li>
                         ))}
                     </ul>
